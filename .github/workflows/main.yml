@@ -9,5 +9,6 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@main
       with:
         registry: docker.pkg.github.com
+        username: ${{ secrets.DOCKER_USERNAME }}
         name: docker.pkg.github.com/Hikandgo/marketplace-api/marketplace-api
         tags : "develop"
