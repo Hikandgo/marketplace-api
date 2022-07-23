@@ -1,5 +1,5 @@
 version: '3'
-service:
+services:
   marketplace.api:
     image: marketplace-api:latest
     container_name: marketplace-api
