@@ -1,10 +1,10 @@
 version: '3'
 services:
-  marketplace.api:
-    image: marketplace-api:latest
+  marketplace-api:
+    image: marketplace:latest
     container_name: marketplace-api
     restart: always
     ports:
-      - 3000:3000
+      - "9000:9000"
     volumes:
       - ./.env:/opt/app/.env
